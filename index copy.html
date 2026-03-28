@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Expedition - Ticket Online Pesawat, Bus, Kereta</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <style>
+      /* Sedikit fix untuk background positioning agar lebih konsisten di v4 */
+      .hero-bg {
+        background-image: url("aseet/Waves-02.jpg");
+        background-size: cover;
+        background-position: center 65%;
+        background-repeat: no-repeat;
+      }
+      .testimonial-bg {
+        background-image: url("aseet/Group 48012.png");
+        background-size: cover;
+        background-position: center 5%;
+        background-repeat: no-repeat;
+      }
+
+      /* Hide scrollbar untuk testimonial snap area tapi tetep bisa di-scroll */
+      .snap-inline-container::-webkit-scrollbar {
+        display: none;
+      }
+      .snap-inline-container {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 text-[#1E293B] bg-white font-sans overflow-x-hidden">
+    <div
+      class="hero-bg h-96 w-full flex items-center justify-center gap-x-20 xl:gap-x-72 p-10 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black/20 z-0"></div>
+
+      <div
+        class="relative opacity-0 animate-fade-in-up z-10"
+        style="animation-delay: 0.2s"
+      >
+        <img
+          class="h-24 xl:h-32 drop-shadow-2xl"
+          src="aseet/modern-whale.png"
+          alt="Logo"
+        />
+        <div class="mt-6 ml-10 space-y-2 text-white">
+          <span class="flex items-center gap-2">
+            <img
+              class="h-4 w-4 brightness-200"
+              src="aseet/icon/profile.png"
+              alt=""
+            />
+            <p class="text-xs font-semibold">+6282xxxxxx15</p>
+          </span>
+          <span class="flex items-center gap-2">
+            <img
+              class="h-4 w-4 brightness-200"
+              src="aseet/icon/globe.png"
+              alt=""
+            />
+            <p class="text-xs font-semibold uppercase tracking-wider">
+              Ayo Jelajahi Kekayaan Indonesia!!
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div
+        class="opacity-0 animate-fade-in-up z-10 text-center"
+        style="animation-delay: 0.5s"
+      >
+        <p
+          class="text-lg xl:text-sm font-bold leading-relaxed mb-6 text-white drop-shadow-md"
+        >
+          Explore breathtaking<br />landscape and unique culture
+        </p>
+        <a
+          class="border-2 border-slate-300 outline-offset-8 outline-white rounded-full p-4 h-8 w-auto flex items-center justify-center mt-2 shadow-lg shadow-slate-500 hover:bg-[#3F5F86]/85 hover:text-white transition duration-300 ease-in-out bg-white font-medium hover:-translate-y-0.5 hover:scale-100 md:p-2 md:h-6 md:text-xs md:mt-1 xl:border-2 xl:border-slate-300 xl:outline-offset-8 xl:outline-white xl:rounded-full xl:p-4 xl:h-8 xl:w-auto xl:flex xl:items-center xl:justify-center xl:mt-2 xl:shadow-lg xl:shadow-slate-500 xl:bg-white xl:font-medium"
+          href="#"
+        >
+          Lets Explore
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="md:flex md:flex-col hidden justify-center items-center mt-12 opacity-0 animate-fade-in-up animation-delay-600"
+    >
+      <h1 class="my-8 text-xl xl:text-2xl font-bold tracking-tight text-center">
+        Unlock Your Next Adventure
+      </h1>
+      <div class="flex justify-center gap-x-2 px-4 flex-wrap">
+        <span class="rounded-xl bg-black w-1 h-1 self-center"></span
+        ><span
+          class="border-t-2 border-slate-300 w-16 md:w-20 self-center"
+        ></span>
+        <span class="rounded-xl bg-black w-1 h-1 self-center"></span
+        ><span
+          class="border-t-2 border-slate-300 w-16 md:w-20 self-center"
+        ></span>
+        <span class="rounded-xl bg-black w-1 h-1 self-center"></span
+        ><span
+          class="border-t-2 border-slate-300 w-16 md:w-20 self-center"
+        ></span>
+        <span class="rounded-xl bg-black w-1 h-1 self-center"></span
+        ><span
+          class="border-t-2 border-slate-300 w-16 md:w-20 self-center"
+        ></span>
+        <span class="rounded-xl bg-black w-1 h-1 self-center"></span
+        ><span
+          class="border-t-2 border-slate-300 w-16 md:w-20 self-center"
+        ></span>
+        <span class="rounded-xl bg-black w-1 h-1 self-center"></span>
+      </div>
+    </div>
+
+    <div
+      class="md:flex md:flex-col hidden justify-center items-center mt-10 mb-10 px-6 opacity-0 animate-fade-in-up animation-delay-800"
+    >
+      <p
+        class="text-sm md:text-base text-center max-w-3xl leading-relaxed font-normal text-slate-700"
+      >
+        Ingin bepergian, pulang ke kampung halaman, atau mengejar jadwal
+        penting...
+        <strong class="text-[#133B6C]">"WORLD EXPEDITION"</strong> hadir sebagai
+        solusi pemesanan tiket yang sederhana.
+      </p>
+    </div>
+
+    <div
+      class="md:flex hidden justify-center gap-x-8 md:gap-x-16 p-8 bg-slate-200 w-full h-auto mt-10"
+    >
+      <img
+        class="h-7 md:h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+        src="aseet/icon/instagram.png"
+        alt="Instagram"
+      />
+      <img
+        class="h-7 md:h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+        src="aseet/icon/facebook.png"
+        alt="Facebook"
+      />
+      <img
+        class="h-7 md:h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+        src="aseet/icon/twitter.png"
+        alt="Twitter"
+      />
+      <img
+        class="h-7 md:h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+        src="aseet/icon/video.png"
+        alt="TikTok"
+      />
+      <img
+        class="h-7 md:h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+        src="aseet/icon/business.png"
+        alt="LinkedIn"
+      />
+      <img
+        class="h-7 md:h-8 hover:scale-110 transition-transform duration-300 cursor-pointer"
+        src="aseet/icon/whatsapp.png"
+        alt="WhatsApp"
+      />
+    </div>
+
+    <div class="hidden md:block bg-white pb-32 pt-10">
+      <h1
+        class="text-center text-3xl font-bold tracking-[0.2em] my-10 uppercase"
+      >
+        WE FEATURE
+      </h1>
+
+      <div class="md:flex hidden justify-center items-center gap-x-2 mb-24">
+        <span class="h-2.5 w-2.5 rounded-full bg-slate-800"></span>
+        <span class="border-t-2 border-slate-300 w-24"></span>
+        <span class="h-2.5 w-2.5 rounded-full bg-slate-800"></span>
+        <span class="border-t-2 border-slate-300 w-24"></span>
+        <span class="h-2.5 w-2.5 rounded-full bg-slate-800"></span>
+      </div>
+
+      <div class="max-w-6xl mx-auto space-y-44">
+        <div class="flex items-center justify-between px-10 group">
+          <div class="w-1/2 flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-8 uppercase tracking-widest">
+              Customer Service 24/7
+            </h2>
+            <div
+              class="relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 group-hover:-translate-y-2"
+            >
+              <img
+                class="h-64 object-cover border-4 border-slate-50"
+                src="aseet/images/cs.png"
+                alt="CS Chat"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center justify-center relative">
+            <img
+              class="h-80 object-contain transition-transform duration-500 group-hover:scale-105"
+              src="aseet/Maskot/tracing-anime-removebg-preview.png"
+              alt="Mascot"
+            />
+            <div class="relative ml-6">
+              <span
+                class="absolute -left-5 bottom-12 h-4 w-4 rounded-full bg-slate-300 shadow-sm"
+              ></span>
+              <span
+                class="absolute -left-10 bottom-6 h-2 w-2 rounded-full bg-slate-300 shadow-sm"
+              ></span>
+              <div
+                class="bg-slate-300 rounded-[50px] px-10 py-7 text-center shadow-lg border-b-4 border-slate-400"
+              >
+                <p class="text-slate-800 font-bold text-lg leading-tight">
+                  Kami siap membantu <br />
+                  anda setiap saat
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between px-10 gap-x-12 group">
+          <div class="w-1/2">
+            <h2
+              class="text-4xl font-black text-[#133B6C] leading-[1.1] uppercase transition-colors duration-300 group-hover:text-blue-700"
+            >
+              Pemesanan tiket mudah, cepat dan no drama
+            </h2>
+          </div>
+
+          <div class="w-1/2 flex flex-col items-center">
+            <h2
+              class="text-xl font-bold mb-12 uppercase tracking-[0.2em] text-slate-400 text-center"
+            >
+              PEMESANAN TIKET CEPAT
+            </h2>
+
+            <div
+              class="relative h-72 w-full perspective-1000"
+              id="ticket-container"
+            >
+              <img
+                id="ticket-back"
+                class="h-56 absolute top-8 left-24 rounded-xl border border-slate-200 shadow-md z-10 cursor-pointer transition-all duration-500 ease-in-out hover:brightness-110"
+                src="aseet/images/Screenshot 2026-02-15 151409.png"
+                alt="Ticket 1"
+                onclick="swapTickets(this)"
+              />
+
+              <img
+                id="ticket-front"
+                class="h-56 absolute top-0 left-10 rounded-xl border-4 border-blue-500 shadow-2xl z-20 cursor-pointer transition-all duration-500 ease-in-out hover:scale-110"
+                src="aseet/images/Screenshot 2026-02-15 140741.png"
+                alt="Ticket 2"
+                onclick="swapTickets(this)"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between px-10 group">
+          <div class="w-1/2 flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-8 uppercase tracking-widest">
+              Exchange Point
+            </h2>
+            <div
+              class="relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 group-hover:-translate-y-2"
+            >
+              <img
+                class="h-64 object-cover border-4 border-slate-50"
+                src="aseet/images/shop.png"
+                alt="Exchange"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 flex items-center justify-center relative">
+            <img
+              class="h-80 object-contain rounded-3xl shadow-sm"
+              src="aseet/Maskot/Andyka-img.jpeg"
+              alt="Mascot 2"
+            />
+            <div class="relative ml-6">
+              <span
+                class="absolute -left-5 top-12 h-4 w-4 rounded-full bg-slate-300 shadow-sm"
+              ></span>
+              <span
+                class="absolute -left-10 top-6 h-2 w-2 rounded-full bg-slate-300 shadow-sm"
+              ></span>
+              <div
+                class="bg-slate-300 rounded-[50px] px-12 py-8 text-center shadow-lg border-b-4 border-slate-400"
+              >
+                <p
+                  class="text-slate-800 font-black text-2xl uppercase italic leading-none"
+                >
+                  Tukar point <br />
+                  <span class="text-blue-700">jadi discount!!</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="testimonial-bg w-full py-20 px-6 md:px-20 mt-24 opacity-0 animate-fade-in-up md:block hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col xl:flex-row items-center gap-12"
+      >
+        <div class="flex-1 text-center xl:text-left text-white">
+          <h1
+            class="text-4xl md:text-5xl font-bold underline mb-6 tracking-tight uppercase leading-tight"
+          >
+            What user say <br />
+            about us
+          </h1>
+          <p class="max-w-md mx-auto xl:mx-0 opacity-90 text-lg mb-8">
+            Dengarkan langsung cerita perjalanan seru dari para penjelajah yang
+            telah menggunakan layanan kami.
+          </p>
+        </div>
+
+        <div class="w-full xl:w-2/3 relative">
+          <div
+            class="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-10 scroll-smooth"
+          >
+            <div
+              class="min-w-[300px] md:min-w-[400px] snap-center bg-white rounded-2xl shadow-2xl p-6 transform transition-transform hover:scale-[1.02]"
+            >
+              <div
+                class="w-full bg-[#3F5F86] h-16 flex items-center justify-end pr-6 rounded-t-xl text-white font-semibold italic"
+              >
+                @traveler_sejati
+              </div>
+              <div
+                class="w-20 h-20 relative -top-10 left-6 bg-[#133B6C] rounded-full border-4 border-white flex justify-center items-center shadow-lg"
+              >
+                <img
+                  class="h-10 w-10"
+                  src="aseet/icon/profile.png"
+                  alt="User"
+                />
+              </div>
+              <p class="px-5 -mt-5 text-slate-700 leading-relaxed italic">
+                "Pemesanan tiket kereta ke Jogja jadi gampang banget! Gak perlu
+                antre dan CS-nya beneran fast respon pas nanya jadwal."
+              </p>
+            </div>
+
+            <div
+              class="min-w-[300px] md:min-w-[400px] snap-center bg-white rounded-2xl shadow-2xl p-6 transform transition-transform hover:scale-[1.02]"
+            >
+              <div
+                class="w-full bg-[#3F5F86] h-16 flex items-center justify-end pr-6 rounded-t-xl text-white font-semibold italic"
+              >
+                anonymous
+              </div>
+              <div
+                class="w-20 h-20 relative -top-10 left-6 bg-[#133B6C] rounded-full border-4 border-white flex justify-center items-center shadow-lg"
+              >
+                <img
+                  class="h-10 w-10"
+                  src="aseet/icon/profile.png"
+                  alt="User"
+                />
+              </div>
+              <p class="px-5 -mt-5 text-slate-700 leading-relaxed italic">
+                "Fitur Exchange Point-nya juara sih. Sering dapet diskon hotel
+                gara-gara tuker poin hasil beli tiket pesawat. Mantap!"
+              </p>
+            </div>
+
+            <div
+              class="min-w-[300px] md:min-w-[400px] snap-center bg-white rounded-2xl shadow-2xl p-6 transform transition-transform hover:scale-[1.02]"
+            >
+              <div
+                class="w-full bg-[#3F5F86] h-16 flex items-center justify-end pr-6 rounded-t-xl text-white font-semibold italic"
+              >
+                Budi_Explora
+              </div>
+              <div
+                class="w-20 h-20 relative -top-10 left-6 bg-[#133B6C] rounded-full border-4 border-white flex justify-center items-center shadow-lg"
+              >
+                <img
+                  class="h-10 w-10"
+                  src="aseet/icon/profile.png"
+                  alt="User"
+                />
+              </div>
+              <p class="px-5 -mt-5 text-slate-700 leading-relaxed italic">
+                "Interface aplikasinya bersih dan no drama. Langsung dapet
+                e-ticket dalam hitungan menit lewat email dan WhatsApp."
+              </p>
+            </div>
+          </div>
+
+          <p
+            class="text-white/60 text-center mt-4 md:hidden text-sm animate-pulse"
+          ></p>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-[#133B6C] text-white pt-16 pb-8 px-6 md:px-20 md:block hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12"
+      >
+        <div class="flex flex-col space-y-8 items-center md:items-start">
+          <div class="inline-block">
+            <img
+              class="h-20 object-contain"
+              src="aseet/modern-whale02-removebg-preview.png"
+              alt="World Expedition Logo"
+            />
+            <div class="border-b-2 border-white w-full mt-[-5px]"></div>
+          </div>
+
+          <button
+            class="bg-[#ECECEC] text-[#133B6C] px-8 py-3 rounded-full font-bold text-xl shadow-[6px_6px_0px_rgba(0,0,0,0.5)] hover:translate-y-1 hover:shadow-none transition-all duration-300"
+          >
+            Parthner With WE
+          </button>
+
+          <div class="space-y-4">
+            <p class="text-xl font-medium text-center md:text-left">
+              Payment Partners:
+            </p>
+            <div class="grid grid-cols-3 gap-3">
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/gopay.jpg"
+                  alt="Gopay"
+                  class="h-full object-contain"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/indomaret.png"
+                  alt="Indomaret"
+                  class="h-full object-contain"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/alfamart.jpg"
+                  alt="Alfamart"
+                  class="h-full object-contain"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/bri.jpg"
+                  alt="BRI"
+                  class="h-full object-contain"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/bca.jpg"
+                  alt="BCA"
+                  class="h-full object-cover"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/paypal.jpg"
+                  alt="PayPal"
+                  class="h-full object-contain"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/OVO.jpg"
+                  alt="OVO"
+                  class="h-full object-contain"
+                />
+              </div>
+              <div
+                class="bg-white rounded-full h-10 w-24 flex items-center justify-center shadow-md overflow-hidden p-1"
+              >
+                <img
+                  src="aseet/payment/BNI.jpg"
+                  alt="BNI"
+                  class="h-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col space-y-10">
+          <div class="space-y-4">
+            <h3 class="text-2xl font-medium tracking-wide">Follow us on:</h3>
+            <ul class="space-y-3">
+              <li
+                class="flex items-center gap-3 hover:text-blue-300 cursor-pointer transition"
+              >
+                <img src="aseet/icon/video.png" class="h-6 w-6" alt="Tiktok" />
+                Tiktok
+              </li>
+              <li
+                class="flex items-center gap-3 hover:text-blue-300 cursor-pointer transition"
+              >
+                <img
+                  src="aseet/icon/twitter.png"
+                  class="h-6 w-6"
+                  alt="Twitter"
+                />
+                Twitter
+              </li>
+              <li
+                class="flex items-center gap-3 hover:text-blue-300 cursor-pointer transition"
+              >
+                <img
+                  src="aseet/icon/facebook.png"
+                  class="h-6 w-6"
+                  alt="Facebook"
+                />
+                Facebook
+              </li>
+              <li
+                class="flex items-center gap-3 hover:text-blue-300 cursor-pointer transition"
+              >
+                <img
+                  src="aseet/icon/instagram.png"
+                  class="h-6 w-6"
+                  alt="Instagram"
+                />
+                Instagram
+              </li>
+              <li
+                class="flex items-center gap-3 hover:text-blue-300 cursor-pointer transition"
+              >
+                <img
+                  src="aseet/icon/business.png"
+                  class="h-6 w-6"
+                  alt="Linkedin"
+                />
+                Linkedin
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-4 max-w-md">
+            <h3 class="text-xl font-medium">About World Expedition:</h3>
+            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-base">
+              <a href="#" class="hover:underline">How to Book</a>
+              <span class="text-white/50">|</span>
+              <a href="#" class="hover:underline">Contact Us</a>
+              <span class="text-white/50">|</span>
+              <a href="#" class="hover:underline">Help Center</a>
+              <a href="#" class="hover:underline">Careers</a>
+              <span class="text-white/50">|</span>
+              <a href="#" class="hover:underline">Installment</a>
+              <span class="text-white/50">|</span>
+              <a href="#" class="hover:underline">About Us</a>
+              <span class="text-white/50">|</span>
+              <a href="#" class="hover:underline">New Release Features</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-end justify-between py-2 mr-16"
+        >
+          <div class="text-center md:text-right space-y-4">
+            <h3
+              class="text-xl text-center font-medium uppercase tracking-widest text-white/80"
+            >
+              Start <br />
+              Exploration
+            </h3>
+            <a
+              href="#"
+              class="bg-[#ECECEC] text-[#133B6C] px-10 py-3 rounded-full font-bold text-xl shadow-[6px_6px_0px_rgba(0,0,0,0.5)] hover:translate-y-1 hover:shadow-none transition-all duration-300 hover:cursor-pointer"
+            >
+              Lets Explore
+            </a>
+          </div>
+
+          <div class="text-center md:text-right space-y-4 mt-12">
+            <h3
+              class="text-xl font-medium uppercase tracking-widest text-white/80"
+            >
+              Download Now
+            </h3>
+            <a
+              href="#"
+              class="inline-block transition-transform hover:scale-105 active:scale-95"
+            >
+              <img
+                src="aseet/icon/image 16.png"
+                alt="Get it on Google Play"
+                class="h-16 shadow-lg rounded-lg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-20 pt-8 border-t border-white/20 text-center">
+        <p class="text-2xl font-light tracking-wide">
+          &copy; World Expedition 2026
+        </p>
+      </div>
+    </footer>
+
+    <!-- mobile -->
+    <div
+      id="load"
+      class="bg-[#133B6C] md:hidden min-h-screen flex justify-center items-center transition-opacity duration-700 ease-in-out"
+    >
+      <img
+        class="h-1/2"
+        src="aseet/modern-whale02-removebg-preview.png"
+        alt=""
+      />
+    </div>
+
+    <div class="m-10 md:hidden">
+      <div
+        class="bg-[#133B6C] h-80 rounded-3xl w-full flex justify-center items-center"
+      >
+        <img
+          class="h-32"
+          src="aseet/modern-whale02-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <h1 class="text-center text-2xl mt-10">
+        Explore breathlating landshape and unique culture
+      </h1>
+      <p class="mt-5 text-center">
+        World Expedition adalah aplikasi berbasis website dan mobile yang
+        menyediakan layanan pemesanan tiket transportasi dan paket wisata secara
+        online untuk memudahkan pengguna dalam merencanakan perjalanan dengan
+        cepat, aman, dan nyaman dalam satu platform.
+      </p>
+
+      <div
+        class="flex justify-center items-center text-center mt-10 text-2xl flex-col gap-y-10"
+      >
+        <a class="h-12 p-2 w-full bg-[#133B6C] rounded-full text-white" href=""
+          >SIGN IN</a
+        >
+        <a class="h-12 p-2 w-full bg-[#133B6C] rounded-full text-white" href=""
+          >SIGN UP</a
+        >
+      </div>
+    </div>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>

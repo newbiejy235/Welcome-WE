@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+
+
+@keyframes oceanSwell {
+  0%,
+  100% {
+    background-position: center 65%; /* Posisi Awal */
+  }
+  50% {
+    background-position: center 70%; /* Turun Sedikit (Membuat efek naik) */
+  }
+}
+
+.hero-bg {
+  background-image: url("aseet/Waves-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Tambahkan class animasi di sini */
+  animation: oceanSwell 10s ease-in-out infinite;
+}
+
+/* 2. Animasi Testimonial Slider & Panah */
+.testimonial-bg {
+  background-image: url("aseet/Group 48012.png");
+  background-size: cover;
+  background-position: center 5%;
+  background-repeat: no-repeat;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes bounceX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+.animate-bounce-x {
+  animation: bounceX 1s infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animasi Panah Bergerak */
+@keyframes bounceX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+.animate-bounce-x {
+  animation: bounceX 1s infinite;
+}
+
+@layer utilities {
+  /* Keyframes & Animations dari revisi sebelumnya */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  .animate-scale-in {
+    animation: scaleIn 0.8s ease-out forwards;
+  }
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+
+  /* Delay Classes */
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar tapi tetep bisa scroll (untuk slider) */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Styling Navigator Slider (Aktif) */
+  .slider-dot.active {
+    background-color: #133b6c; /* Warna biru utama lu */
+    transform: scale(1.3);
+  }
+}
