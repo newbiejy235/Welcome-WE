@@ -654,7 +654,9 @@
         </div>
 
         <!-- ── Col 3: Download + Back to Top (lg ke atas saja) ── -->
-        <div class="hidden lg:flex flex-col items-end justify-center gap-y-16 py-2">
+        <div
+          class="hidden lg:flex flex-col items-end justify-center gap-y-16 py-2"
+        >
           <div class="space-y-2 xl:space-y-3 text-right">
             <h3
               class="text-sm xl:text-xl font-medium uppercase tracking-widest text-white/80"
@@ -703,46 +705,96 @@
     </footer>
 
     <!-- ===== MOBILE (jangan diubah) ===== -->
-    <div
-      id="load"
-      class="bg-[#133B6C] md:hidden min-h-screen flex justify-center items-center transition-opacity duration-700 ease-in-out"
-    >
-      <img
-        class="h-1/2"
-        src="aseet/modern-whale02-removebg-preview.png"
-        alt=""
-      />
-    </div>
-
-    <div class="md:hidden">
+    <div class="bg-slate-50 font-sans block antialiased md:hidden">
       <div
-        class="bg-[#133B6C] h-80 rounded-3xl w-full flex justify-center items-center"
+        id="loader"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-brand transition-opacity duration-700"
       >
         <img
-          class="h-32"
           src="aseet/modern-whale02-removebg-preview.png"
-          alt=""
+          class="h-32 animate-pulse"
+          alt="Logo"
         />
       </div>
-      <h1 class="text-center text-2xl mt-10">
-        Explore breathlating landshape and unique culture
-      </h1>
-      <p class="mt-5 text-center">
-        World Expedition adalah aplikasi berbasis website dan mobile yang
-        menyediakan layanan pemesanan tiket transportasi dan paket wisata secara
-        online untuk memudahkan pengguna dalam merencanakan perjalanan dengan
-        cepat, aman, dan nyaman dalam satu platform.
-      </p>
-      <div
-        class="flex justify-center items-center text-center mt-10 text-2xl flex-col gap-y-10"
+
+      <section
+        class="relative overflow-hidden bg-brand pb-20 pt-10 rounded-b-[40px] shadow-xl"
       >
-        <a class="h-12 p-2 w-full bg-[#133B6C] rounded-full text-white" href=""
-          >SIGN IN</a
+        <div class="flex flex-col items-center px-6">
+          <img
+            src="aseet/modern-whale02-removebg-preview.png"
+            class="h-24 animate-float"
+            alt="Logo"
+          />
+          <h1
+            class="mt-6 text-center text-2xl font-bold text-white leading-tight"
+          >
+            Explore breathtaking landscapes <br />& unique culture
+          </h1>
+        </div>
+
+        <div
+          class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10"
+        ></div>
+      </section>
+
+      <section class="relative -mt-12 px-6">
+        <div class="grid grid-cols-3 gap-4 rounded-2xl bg-white p-4 shadow-lg">
+          <button
+            class="flex flex-col items-center gap-2 transition-transform active:scale-90"
+          >
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-brand text-xl"
+            >
+              ✈️
+            </div>
+            <span class="text-xs font-semibold">Pesawat</span>
+          </button>
+          <button
+            class="flex flex-col items-center gap-2 transition-transform active:scale-90"
+          >
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-600 text-xl"
+            >
+              🚆
+            </div>
+            <span class="text-xs font-semibold">Kereta</span>
+          </button>
+          <button
+            class="flex flex-col items-center gap-2 transition-transform active:scale-90"
+          >
+            <div
+              class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-100 text-green-600 text-xl"
+            >
+              🚌
+            </div>
+            <span class="text-xs font-semibold">Bus</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="mt-8 px-8">
+        <p class="text-center text-sm leading-relaxed text-slate-500">
+          <span class="font-bold text-brand">World Expedition</span> adalah
+          solusi satu pintu untuk rencana perjalanan Anda. Cepat, aman, dan
+          nyaman dalam satu genggaman.
+        </p>
+      </section>
+
+      <section class="mt-10 flex flex-col gap-4 px-8 pb-10">
+        <a
+          href="#"
+          class="flex h-14 items-center justify-center rounded-2xl bg-brand font-bold text-white shadow-lg transition-all hover:bg-slate-800 active:scale-95"
         >
-        <a class="h-12 p-2 w-full bg-[#133B6C] rounded-full text-white" href=""
-          >SIGN UP</a
+          SIGN IN
+        </a>
+        <a
+          href="#"
+          class="flex h-14 items-center justify-center rounded-2xl border-2 border-brand font-bold text-brand transition-all active:bg-brand active:text-white"
         >
-      </div>
+          SIGN UP
+        </a>
+      </section>
     </div>
 
     <script src="script/main.js"></script>

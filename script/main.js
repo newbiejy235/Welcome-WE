@@ -1,4 +1,4 @@
-const load = document.querySelector('#load')
+const load = document.querySelector('#loader')
 
 setTimeout(() => {
  
